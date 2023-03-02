@@ -10,7 +10,7 @@ export default function Header() {
   const [showSearch, setShowSearch] = useState(false);
   const { pathname } = useLocation();
   const { state, dispatch } = useContext(Context);
-  const inputRef = useRef()
+  const inputRef = useRef();
 
   const toggleDarkMode = (isDarkMode) => {
     setDarkMode(!isDarkMode);
@@ -36,16 +36,16 @@ export default function Header() {
   const setInputValue = (e) => {
     dispatch({ type: "SET_SEARCH", payload: e.target.value });
   };
-  const searchHandler = e => {
+  const searchHandler = (e) => {
     if (e.key === "Enter") {
       getValueOnClick();
     }
-  }
+  };
   const getValueOnClick = () => {
     inputRef.current.blur();
-    dispatch({ type: 'SET_REGIONAL_SEARCH', payload: state.search });
+    dispatch({ type: "SET_REGIONAL_SEARCH", payload: state.search });
     setShowSearch(!showSearch);
-  }
+  };
 
   return (
     <header className="header">
