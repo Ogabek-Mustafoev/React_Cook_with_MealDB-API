@@ -1,0 +1,68 @@
+.features {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+.features .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.features .box-container .box {
+  display: grid;
+  grid-template-rows: auto 3rem auto;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: var(--white);
+  outline: 1rem solid var(--bg);
+  outline-offset: -1rem;
+  text-align: center;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+
+.features .box-container .box:hover {
+  outline: 0.2rem solid var(--black);
+  outline-offset: 0rem;
+}
+.features .box-container .box:hover img {
+  transform: scale(1.1) translateY(-1rem);
+}
+
+.features .box-container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 1rem 0;
+  transition: all 0.6s ease;
+}
+
+.features .box-container .box h3 {
+  padding: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+.features .box-container .box .btn:hover b {
+  color: white;
+}
+.features .box-container .box .btn {
+  height: 5rem;
+}
+.features .box-container .box .btn b {
+  color: var(--orange);
+}
+.find_error {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}

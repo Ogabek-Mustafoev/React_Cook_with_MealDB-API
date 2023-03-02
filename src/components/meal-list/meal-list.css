@@ -1,0 +1,63 @@
+.regional_meals {
+  padding-bottom: 0;
+}
+
+.categories .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 0.5fr));
+  gap: 1.5rem;
+}
+
+.categories .box-container .box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto 5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  outline: 1rem solid var(--bg);
+  outline-offset: -1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.categories .box-container .box:hover {
+  outline: 0.2rem solid var(--black);
+  outline-offset: 0rem;
+}
+.categories .box-container .box:hover img {
+  transform: scale(1.2) translateY(-2rem);
+  transition: all 1s ease;
+}
+
+.categories .box-container .box img {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+.categories .box-container .box h3 {
+  background: var(--white);
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem;
+  z-index: 100;
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+.categories .box-container .box .btn {
+  padding: 0.8rem 0;
+  height: 5rem;
+  width: 90%;
+}
+.categories .box-container .box .btn:hover b {
+  color: white;
+}
+.categories .box-container .box .btn b {
+  color: var(--orange);
+}

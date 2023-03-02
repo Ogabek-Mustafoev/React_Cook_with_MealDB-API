@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Passions+Conflict&display=swap");
+footer {
+  margin-top: 7rem;
+  background: var(--bg);
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27% 73% 56% 44% / 30% 35% 65% 70%;
+  border: 2px solid var(--light-color);
+  width: 32.5rem;
+  height: 37.5rem;
+}
+.img2 {
+  border-radius: 27% 73% 56% 44% / 30% 35% 65% 70%;
+  overflow: hidden;
+  background: linear-gradient(
+    241deg,
+    rgb(204, 201, 201) 10%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 30rem;
+  height: 35rem;
+}
+.img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content_info {
+  padding-left: 3rem;
+}
+.greeting {
+  font-size: 7rem;
+  color: var(--orange);
+}
+.greeting span {
+  color: var(--light-color);
+  font-size: 3rem;
+}
+.name_tag {
+  margin-bottom: 2rem;
+  color: var(--black);
+  font-size: 6rem;
+  font-family: "Courgette", cursive;
+  font-weight: 100;
+}
+.footer_wrapper {
+  background: var(--white);
+}
+.box-container {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.box-container .box {
+  padding: 0 1rem;
+}
+.box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.box-container .box h3 i {
+  color: var(--orange);
+}
+
+.box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.box-container .box .links i {
+  color: var(--orange);
+  padding-right: 0.5rem;
+}
+
+.box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.box-container .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.box-container .box .share a i {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 0.5rem;
+  background: var(--bg);
+  text-align: center;
+}
+
+.box-container .box .share a:hover i {
+  background: var(--orange);
+  color: white;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: 0.2rem solid var(--light-color);
+}
+
+.credit span {
+  color: var(--orange);
+}

@@ -1,0 +1,17 @@
+.alphabetical {
+  margin-top: 7rem;
+}
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.letters .btn.active {
+  background: var(--orange);
+  color: white;
+}
+.letters .btn {
+  border-color: var(--light-color);
+  padding: 0.5rem 2rem;
+  font-size: 1.7rem;
+}

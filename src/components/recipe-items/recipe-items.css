@@ -1,0 +1,128 @@
+.recipe {
+  margin-top: 5.5rem;
+}
+.recipe-header {
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.recipe-header .btn {
+  padding: 0.8rem 0;
+  margin: 0;
+}
+.recipe-heading {
+  font-size: 3rem;
+  background-color: var(--orange);
+  font-family: "Italiana", serif;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.card-wrapper {
+  width: 100%;
+  margin: 25px auto 20px auto;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.53);
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.8;
+  color: var(--black);
+}
+
+.img img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+b {
+  color: var(--orange);
+}
+
+ul span {
+  border-radius: 0.3rem;
+  padding: 0.1rem;
+  background: var(--orange);
+  font-size: 2.5rem;
+}
+.description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.ingredient_and_youtube {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+table {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  border: 0;
+  border-collapse: collapse;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  color: var(--black);
+}
+
+tr:nth-of-type(odd) {
+  background-color: var(--bg);
+  color: var(--black);
+}
+
+th {
+  font-weight: 700;
+  background-color: var(--light-color);
+  color: rgb(255, 255, 255);
+  background: var(--orange);
+}
+
+th,
+td {
+  padding: 0.5rem 0.1rem;
+  border: 1px solid #bfbfbf;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.selector:not(*:root),
+th,
+td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+td:first-of-type {
+  padding-left: 0.25rem;
+  font-weight: 300;
+  text-align: left;
+  color: var(--black);
+}
+.youtube_content {
+  width: 100%;
+  min-height: 35rem;
+  padding: 1rem 0 0 1rem;
+}

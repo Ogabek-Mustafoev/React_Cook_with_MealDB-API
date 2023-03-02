@@ -1,0 +1,10 @@
+export { default as CategoryItems } from './category-items/category-items';
+export { default as Header } from './header/header';
+export { default as Loader } from './loader/loader';
+export { default as Recipe } from './recipe/recipe';
+export { default as SwiperSlider } from './swiper-slider/swiper-slider';
+export { default as CategoryCard } from './category-card/category-card';
+export { default as RecipeItems } from './recipe-items/recipe-items';
+export { default as MealList } from './meal-list/meal-list';
+export { default as MealItems } from './meal-items/meal-items';
+export { default as SliderCard } from './slider-card/slider-card';
